@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <title>Web Visualization Dashboard</title>
+  <!--from Bootstrap DL page-->
+  <meta http-equiv="X-UA-Compatible" content="IE=edge"> <!--to block compatibility view settings-->
+  <meta name="viewport" content="width=device-width, initial-scale=1"> <!--for responsive web design (change design along screen sizes-->
+  
+  
+
+  <!-- Read Bootstrap CSS it's also downloaded from Bootstrap only picked CCS url--> 
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous">
+
+  <!--CSS Link-->
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+
+<body>
+  <div class="navigation"> 
+    <nav class="navbar navbar-expand-lg navbar-light"> 
+      <a class="navbar-brand" style="background-color: #0BADA6;" href="index.html">Latitude</a> 
+      <button class="navbar-toggler" data-toggle="collapse" type="button" data-target="#navbarNavDropdown"
+      aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button> 
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ml-auto"> 
+
+
+          <!--1."Plots"--> 
+          <li class="nav-item dropdown"> <!--to show the listed items. ul&li is always the set-->
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Plots
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+              <a class="dropdown-item" href="max_temperature.html">Max Temperature</a>
+              <a class="dropdown-item" href="humidity.html">Humidity</a>
+              <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+              <a class="dropdown-item" href="wind_speed.html">Wind Speed</a>
+            </div>
+          </li>
+
